@@ -25,7 +25,7 @@ namespace ProjetoBiblioteca.Autenticacao
                     var allowed = RoleAnyOf.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
                     if (!allowed.Contains(role))
                     {
-                        context.Result = new ForbidResult();
+                        context.Result = new RedirectToActionResult("AcessoNegado", "Auth", null);
                         return;
                     }
                 }

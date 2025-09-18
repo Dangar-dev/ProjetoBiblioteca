@@ -3,9 +3,12 @@ using ProjetoBiblioteca.Models;
 using MySql.Data.MySqlClient;
 using ProjetoBiblioteca.Data;
 using BCrypt.Net;
+using ProjetoBiblioteca.Autenticacao;
 
 namespace ProjetoBiblioteca.Controllers
 {
+    [SessionAuthorize(RoleAnyOf = "Admin")]
+
     public class UsuariosController : Controller
     {
         public readonly Database db = new Database(); 

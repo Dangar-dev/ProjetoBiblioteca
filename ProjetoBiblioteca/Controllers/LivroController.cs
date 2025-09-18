@@ -172,5 +172,25 @@ namespace ProjetoBiblioteca.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpPost, ValidateAntiForgeryToken]
+
+        public IActionResult Excluir(int id)
+        {
+            using var conn = db.GetConnection();
+            try
+            {
+                using var cmd = new MySqlCommand("sp_livro_excluir", conn) { CommandType = System.Data.CommandType.StoredProcedure };
+                cmd.Parameters.AddWithValue("p_id", id);
+                cmd.ExecuteNonQuery();
+                TempData["ok"] = "Livros excluido!";
+
+            }
+            catch(MySqlException ex)
+            {
+                TempData["ok"] = ex.Message;
+            }
+            return RedirectToAction(nameof(Index));
+        }
     }
+
 }

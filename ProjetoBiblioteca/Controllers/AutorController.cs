@@ -23,7 +23,7 @@ namespace ProjetoBiblioteca.Controllers
                 });
             }
             return View(lista);
-        }
+        }                           
         public IActionResult CriarAutor()
         {
             return View();

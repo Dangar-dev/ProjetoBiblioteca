@@ -2,9 +2,13 @@
 using MySql.Data.MySqlClient;
 using ProjetoBiblioteca.Data;
 using ProjetoBiblioteca.Models;
+using ProjetoBiblioteca.Autenticacao;
 
 namespace ProjetoBiblioteca.Controllers
+         
 {
+    [SessionAuthorize]
+
     public class GeneroController : Controller
     {
         public readonly Database db = new Database();
