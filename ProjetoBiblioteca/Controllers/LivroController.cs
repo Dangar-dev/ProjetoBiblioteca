@@ -117,7 +117,7 @@ namespace ProjetoBiblioteca.Controllers
             using var conn = db.GetConnection();
 
             Livros? livros = null;
-            using (var cmd = new MySqlCommand("sp_livros_obter", conn) {  CommandType = System.Data.CommandType.StoredProcedure})
+            using (var cmd = new MySqlCommand("sp_livro_obter", conn) {  CommandType = System.Data.CommandType.StoredProcedure})
             {
                 cmd.Parameters.AddWithValue("p_id", id);
                 using var rd = cmd.ExecuteReader();
@@ -164,7 +164,7 @@ namespace ProjetoBiblioteca.Controllers
             cmd.Parameters.AddWithValue("p_editora", model.EditoraId ?? (object)DBNull.Value);
             cmd.Parameters.AddWithValue("p_genero", model.GeneroId ?? (object)DBNull.Value);
             cmd.Parameters.AddWithValue("p_ano", model.Ano ?? (object)DBNull.Value);
-            cmd.Parameters.AddWithValue("p_isbn", (object)model.Isbn ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("p_isbn", (object?)model.Isbn ?? DBNull.Value);
             cmd.Parameters.AddWithValue("p_novo_total", model.QuantidadeTotal);
             cmd.ExecuteNonQuery();
 

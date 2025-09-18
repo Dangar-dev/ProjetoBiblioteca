@@ -240,6 +240,7 @@ begin
   left join genero  g on g.id = l.genero
   order by l.titulo;
 end $$
+
 delimiter ;
 
 delimiter $$
@@ -255,8 +256,12 @@ create procedure sp_livro_obter(in p_id int)
 begin
  select id,titulo,autor,editora,genero,ano,isbn,quantidade_total,quantidade_disponivel, criado_em
  from livros where id = p_id;
+ end;
 
+delimiter ;
+ 
 
+delimiter $$
 create procedure sp_livro_atualizar (
 in p_id int,in p_titulo varchar(200), in p_autor int, in p_editora int,
 in p_genero int, in p_ano smallint , in p_isbn varchar(32), in p_novo_total int
@@ -265,16 +270,19 @@ begin
 	Declare v_disp int;   Declare v_total int;
 	select quantidade_disponivel, quantidade_total into v_disp, v_total from
 	livros where id = p_id for update;
+    
 	update livros
-	set titulo = p_titulo, atuor = p_atuor, editora = p_editora, genero = p_genero,
-	ano = p_ano, isbn,
+	set titulo = p_titulo, autor = p_autor, editora = p_editora, genero = p_genero,
+	ano = p_ano, isbn = p_isbn,
 	quantidade_total = p_novo_total,
 	quantidade_disponivel = GREATEST(0, LEAST(p_novo_total, v_disp + (p_novo_total - v_total)))
 	where id = p_id;
-end;
-delimiter ;
+end; $$
 
-delimiter $$
+
+
+
+
 create procedure sp_livro_excluir (in p_id int)
 begin
 delete from livros where id = p_id;
@@ -282,6 +290,7 @@ end $$
 
 
 delimiter ;
+use bdbiblioteca;
 
 select * from livros;    
 select * from usuarios;
