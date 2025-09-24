@@ -143,49 +143,23 @@ alter table livros add constraint fk_livros_autor foreign key(autor)
 
 delimiter $$
 
-CREATE PROCEDURE sp_livro_criar (
+CREATE  PROCEDURE sp_livro_criar (
     IN p_titulo VARCHAR(200),
     IN p_autor VARCHAR(100),
     IN p_editora VARCHAR(100),
     IN p_genero VARCHAR(100),
     IN p_ano int,
     IN p_isbn VARCHAR(32),
-	IN p_quantidade_total int
+	IN p_quantidade_total int,
+    IN p_capa_arquivo varchar(255)
     )
 BEGIN
-	DECLARE dAutor INT;
-	DECLARE dEditora INT;
-	DECLARE dGenero INT;
-
+	
     
-   
-    -- Autor
-    IF NOT EXISTS (SELECT id FROM autor WHERE nome = p_autor) THEN 
-		INSERT INTO autor(nome)
-        VALUES(p_autor);
-    END IF;
-    
-    
-    SET dAutor := (SELECT id FROM autor WHERE nome = p_autor);
-        
-    -- Editora
-    IF NOT EXISTS (SELECT id FROM editora WHERE nome = p_editora) THEN 
-		INSERT INTO editora(nome)
-        VALUES(p_editora);
-    END IF;
-    
-    SET dEditora := (SELECT id FROM editora WHERE nome = p_editora);
-        
-    -- Genero
-    IF NOT EXISTS (SELECT id FROM genero WHERE nome = p_genero) THEN 
-		INSERT INTO genero(nome)
-        VALUES(p_genero);
-    END IF;
-    
-    SET dGenero := (SELECT id FROM genero WHERE nome = p_genero);
-    
-    insert into livros (titulo,autor,editora,genero,ano,isbn,quantidade_total,quantidade_disponivel,criado_em)
-    values(p_titulo,dAutor,dEditora, dGenero, p_ano,p_isbn,p_quantidade_total,p_quantidade_total,now());
+    insert into livros 
+    (titulo,autor,editora,genero,ano,isbn,capa_arquivo,quantidade_total,quantidade_disponivel,criado_em)
+    values
+    (p_titulo,dAutor,dEditora, dGenero, p_ano,p_isbn,p_capa_arquivo,p_quantidade_total,p_quantidade_total,now());
     
 
 END
