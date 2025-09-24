@@ -7,7 +7,6 @@ using ProjetoBiblioteca.Autenticacao;
 
 namespace ProjetoBiblioteca.Controllers
 {
-    [SessionAuthorize(RoleAnyOf = "Admin")]
 
     public class UsuariosController : Controller
     {

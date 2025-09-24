@@ -41,18 +41,18 @@ namespace ProjetoBiblioteca.Controllers
         }
 
         [HttpGet]
-        public IActionResult Editar(int id
+        public IActionResult Editar(int id)
         {
             using var conn = db.GetConnection();
-            Autor? autor = null;
-            using (var cmd = new MySqlCommand("sp_autor_obter", conn) { CommandType = System.Data.CommandType.StoredProcedure })
+            Editora? editora = null;
+            using (var cmd = new MySqlCommand("sp_editora_obter", conn) { CommandType = System.Data.CommandType.StoredProcedure })
             {
                 cmd.Parameters.AddWithValue("p_id", id);
                 using var rd = cmd.ExecuteReader();
                 if (rd.Read())
                 {
 
-                    autor = new Autor
+                   editora = new Editora
                     {
                         Id = rd.GetInt32("id"),
                         Nome = rd.GetString("Nome")
@@ -62,10 +62,10 @@ namespace ProjetoBiblioteca.Controllers
 
 
             }
-            return View(autor);
+            return View(editora);
         }
         [HttpPost, AutoValidateAntiforgeryToken]
-        public IActionResult Editar(Autor model)
+        public IActionResult Editar(Editora model)
         {
             if (model.Id <= 0) return NotFound();
             if (string.IsNullOrWhiteSpace(model.Nome))
@@ -75,16 +75,36 @@ namespace ProjetoBiblioteca.Controllers
 
             }
             using var conn2 = db.GetConnection();
-            using var cmd = new MySqlCommand("sp_autor_atualizar", conn2) { CommandType = System.Data.CommandType.StoredProcedure };
-            cmd.Parameters.AddWithValue("id", model.Id);
+            using var cmd = new MySqlCommand("sp_editora_atualizar", conn2) { CommandType = System.Data.CommandType.StoredProcedure };
+            cmd.Parameters.AddWithValue("p_id", model.Id);
             cmd.Parameters.AddWithValue("p_nome", model.Nome);
             cmd.ExecuteNonQuery();
 
-            TempData["ok"] = "Autor Atualizado";
-            return RedirectToAction(nameof(Index);
+            TempData["ok"] = "Editora Atualizado";
+            return RedirectToAction(nameof(Index));
 
         }
 
+
+
         [HttpPost, ValidateAntiForgeryToken]
+
+        public IActionResult Excluir(int id)
+        {
+            using var conn = db.GetConnection();
+            try
+            {
+                using var cmd = new MySqlCommand("sp_editora_excluir", conn) { CommandType = System.Data.CommandType.StoredProcedure };
+                cmd.Parameters.AddWithValue("p_id", id);
+                cmd.ExecuteNonQuery();
+                TempData["ok"] = "Editor excluido!";
+
+            }
+            catch (MySqlException ex)
+            {
+                TempData["ok"] = ex.Message;
+            }
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
