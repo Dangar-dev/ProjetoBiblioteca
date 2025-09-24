@@ -143,7 +143,7 @@ alter table livros add constraint fk_livros_autor foreign key(autor)
 
 delimiter $$
 
-CREATE  PROCEDURE sp_livro_criar (
+CREATE   PROCEDURE sp_livro_criar (
     IN p_titulo VARCHAR(200),
     IN p_autor VARCHAR(100),
     IN p_editora VARCHAR(100),
@@ -159,7 +159,7 @@ BEGIN
     insert into livros 
     (titulo,autor,editora,genero,ano,isbn,capa_arquivo,quantidade_total,quantidade_disponivel,criado_em)
     values
-    (p_titulo,dAutor,dEditora, dGenero, p_ano,p_isbn,p_capa_arquivo,p_quantidade_total,p_quantidade_total,now());
+    (p_titulo,p_autor,p_Editora, p_Genero, p_ano,p_isbn,p_capa_arquivo,p_quantidade_total,p_quantidade_total,now());
     
 
 END
