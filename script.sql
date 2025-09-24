@@ -288,8 +288,43 @@ begin
 delete from livros where id = p_id;
 end $$
 
-
 delimiter ;
+
+alter table livros add column capa_arquivo varchar(255) null after isbn;
+
+
+create table leitor(
+id_leitor int primary key auto_increment,
+nomeleitor varchar(30),
+foto_leitor varchar(255),
+criado_em datetime not null default current_timestamp
+);
+
+create table emprestimos (
+id int primary key auto_increment,
+id_leitor int not null,
+id_bibliotecario int not null,
+data_emprestimo datetime not null default current_timestamp,
+data_prevista_devolucao date not null,
+data_devolucao_geral datetime null,
+status enum('ativo','Finalizado','Parcial') not null default 'ativo'
+);
+
+create table emprestimo_itens (
+id int primary key auto_increment,
+id_emprestimo int not null,
+id_livro int not null,
+quantidade int not null default 1,
+data_devolucao_item datetime null
+);
+
+
+
+
+alter table emprestimo_itens
+add constraint fk_itens_emp foreign key (id_emprestimo) references emprestimos(id),
+add constraint fk_itens_livro foreign key (id_livro) references livros(id);
+
 use bdbiblioteca;
 
 select * from livros;    
