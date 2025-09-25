@@ -1,5 +1,41 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoBiblioteca</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoBiblioteca</BasePath>
+      <RelativePath>capas/1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rcwg4m3xt9</Fingerprint>
+      <Integrity>yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoBiblioteca</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoBiblioteca</BasePath>
+      <RelativePath>capas/e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kh6dne50lh</Fingerprint>
+      <Integrity>GCHQ1aTJaf0fIIE+hyb9XPqpYn3bLsaaMleQK9egalY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))">
       <SourceType>Package</SourceType>
       <SourceId>ProjetoBiblioteca</SourceId>

@@ -166,6 +166,26 @@ END
 $$
 delimiter ;
 
+delimiter $$
+
+create  procedure sp_leitor_criar(
+
+p_nome_leitor varchar(30),
+p_foto_leitor varchar(255)
+
+)
+begin
+
+insert into leitor
+(nomeleitor, foto_leitor)
+ values(p_nome_leitor,p_foto_leitor);
+end $$
+delimiter ;
+
+
+
+
+
 call sp_livro_criar ('Test O começo','Pedro','Panini','Ação',2025,'978-985-00512-3-7',120,80);
 
 -- Criando select para listar as tabelas AUTOR EDITORA E GENERO
@@ -188,6 +208,15 @@ create procedure sp_genero_listar()
 begin 
  select id,nome from genero order by nome;
 end$$
+delimiter ;
+
+delimiter $$
+
+create procedure sp_leitor_listar()
+begin
+select id_leitor,nomeleitor,foto_leitor from leitor order by nomeleitor;
+end$$
+
 delimiter ;
 
 
@@ -233,6 +262,17 @@ begin
  end;
 
 delimiter ;
+
+delimiter $$
+
+create procedure sp_leitor_obter(in p_id int)
+begin
+
+select id_leitor,nomeleitor,foto_leitor,foto_leitor,criado_em from leitor where id_leitor = p_id;
+
+end  $$
+
+delimiter ;
  
 
 delimiter $$
@@ -274,6 +314,8 @@ foto_leitor varchar(255),
 criado_em datetime not null default current_timestamp
 );
 
+
+
 create table emprestimos (
 id int primary key auto_increment,
 id_leitor int not null,
@@ -292,7 +334,9 @@ quantidade int not null default 1,
 data_devolucao_item datetime null
 );
 
-
+alter table emprestimos 
+add constraint fk_feliotr_emp foreign key (id_leitor) references leitor (id_leitor),
+add constraint fk_empr_bibli foreign key (id_bibliotecario) references Usuarios(id);
 
 
 alter table emprestimo_itens
@@ -306,3 +350,4 @@ select * from usuarios;
 select * from editora;
 select * from genero;
 select * from autor;
+select * from leitor;

@@ -1,0 +1,37 @@
+﻿View Criar
+
+@model ProjetoBiblioteca.Models.Leitor
+
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    ViewData["Title"] = "Novo Leitor";
+
+}
+
+<h2>Novo Livro</h2>
+
+
+
+<form asp-action="Criar" method="post" enctype="multipart/form-data" class="form">
+    @Html.AntiForgeryToken()
+
+
+
+    <div><label>Novo Leitor</label><input asp-for="nomeleitor" required /></div>
+
+
+
+   
+
+    <div class="field">
+        <label>Foto do Leitor</label>
+        <input type="file" name="FOTO" accept="image/*" class="input" />
+        <small class="hint">Formatos comuns:JPG/PNG. Tamanho moderado</small>
+    </div>
+
+
+    <button type="submit">Salvar</button>
+
+</form> 

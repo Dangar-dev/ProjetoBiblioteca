@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\ProjetoBiblioteca.xdf42gwzvi.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg",
+      "PackagePath": "staticwebassets\\capas\\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg"
+    },
+    {
+      "Id": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png",
+      "PackagePath": "staticwebassets\\capas\\e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png"
+    },
+    {
       "Id": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

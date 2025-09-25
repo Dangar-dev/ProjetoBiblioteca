@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "noMG8AobrzoZQUXL9SDz1roD0E6cj7ONHDirHmyixf4=",
+  "Hash": "7E4EJgoFgybAbzvx2XE+hZcgtTcSJNmZydrXoHmv3NE=",
   "Source": "ProjetoBiblioteca",
   "BasePath": "_content/ProjetoBiblioteca",
   "Mode": "Default",
@@ -57,6 +57,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProjetoBiblioteca.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg",
+      "SourceId": "ProjetoBiblioteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\",
+      "BasePath": "_content/ProjetoBiblioteca",
+      "RelativePath": "capas/1da56f4b-9d91-4af0-9f68-9f62b15e3f98#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rcwg4m3xt9",
+      "Integrity": "yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\capas\\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png",
+      "SourceId": "ProjetoBiblioteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\",
+      "BasePath": "_content/ProjetoBiblioteca",
+      "RelativePath": "capas/e76dc4c3-47bf-4b4e-8688-3d11f51ccce3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kh6dne50lh",
+      "Integrity": "GCHQ1aTJaf0fIIE+hyb9XPqpYn3bLsaaMleQK9egalY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\capas\\e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png"
     },
     {
       "Identity": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\css\\site.css",
@@ -1341,6 +1383,170 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "capas/1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg",
+      "AssetFile": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Sep 2025 16:53:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc="
+        }
+      ]
+    },
+    {
+      "Route": "capas/1da56f4b-9d91-4af0-9f68-9f62b15e3f98.rcwg4m3xt9.jpg",
+      "AssetFile": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Sep 2025 16:53:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rcwg4m3xt9"
+        },
+        {
+          "Name": "label",
+          "Value": "capas/1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc="
+        }
+      ]
+    },
+    {
+      "Route": "capas/e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.kh6dne50lh.png",
+      "AssetFile": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2018"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GCHQ1aTJaf0fIIE+hyb9XPqpYn3bLsaaMleQK9egalY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Sep 2025 16:51:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kh6dne50lh"
+        },
+        {
+          "Name": "label",
+          "Value": "capas/e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GCHQ1aTJaf0fIIE+hyb9XPqpYn3bLsaaMleQK9egalY="
+        }
+      ]
+    },
+    {
+      "Route": "capas/e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png",
+      "AssetFile": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2018"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GCHQ1aTJaf0fIIE+hyb9XPqpYn3bLsaaMleQK9egalY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Sep 2025 16:51:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GCHQ1aTJaf0fIIE+hyb9XPqpYn3bLsaaMleQK9egalY="
+        }
+      ]
+    },
     {
       "Route": "css/site.645vu6gqe4.css",
       "AssetFile": "C:\\Users\\3mod\\Downloads\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\css\\site.css",
