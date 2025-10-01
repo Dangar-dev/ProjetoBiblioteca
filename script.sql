@@ -410,6 +410,20 @@ $$
 delimiter ;
 
 
+delimiter $$
+create procedure sp_vitrine_buscar(in p_q varchar(200))
+begin
+select
+l.id,l.titulo, l.autor, l.editora, l.genero, l.ano, l.isbn,
+l.capa_arquivo, l.quantidade_total, l.quantidade_disponivel
+from livros l where l.quantidade_disponivel > 0 and (p_q is null or p_q = '' or
+l.titulo like concat ('%', p_q, '%'))
+order by l.titulo ;
+end $$
+
+
+delimiter ;
+
 use bdbiblioteca;
 
 select * from livros;    

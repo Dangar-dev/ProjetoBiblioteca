@@ -15,6 +15,8 @@ namespace ProjetoBiblioteca.Models
 
         public short? Ano { get; set;}
 
+        public string CapaArquivo { get; set; }
+
         public string? Isbn { get; set;}
 
         public int QuantidadeTotal { get; set;}
