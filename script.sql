@@ -273,6 +273,32 @@ select id_leitor,nomeleitor,foto_leitor,foto_leitor,criado_em from leitor where 
 end  $$
 
 delimiter ;
+
+delimiter $$
+create procedure sp_livro_obter (in p_id int)
+begin
+select id,titulo,autor,editora,genero,ano, isbn, quantidade_total, quantidade_disponivel, criado_em
+from livros where id = p_id;
+end;
+
+create procedure sp_genero_obter (in p_id int)
+begin
+select id,nome,criado_em from genero where id = p_id;
+end ;
+
+create procedure sp_editora_obter (in p_id int)
+begin
+select id,nome,criado_em from editora where id = p_id;
+end ;
+ 
+ 
+ create procedure sp_autor_obter (in p_id int)
+begin
+select id,nome,criado_em from autor where id = p_id;
+end ;
+ 
+ 
+ delimiter ;
  
 
 delimiter $$
@@ -291,7 +317,11 @@ begin
 	quantidade_total = p_novo_total,
 	quantidade_disponivel = GREATEST(0, LEAST(p_novo_total, v_disp + (p_novo_total - v_total)))
 	where id = p_id;
-end; $$
+end; 
+
+
+
+ delimiter ;
 
 
 
@@ -299,7 +329,7 @@ end; $$
 
 create procedure sp_livro_excluir (in p_id int)
 begin
-delete from livros where id = p_id;
+delete from livros where id = p_id 
 end $$
 
 delimiter ;
