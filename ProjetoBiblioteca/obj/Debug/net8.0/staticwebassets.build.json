@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aBnKAk5jsy0eHld3xkD6T0dDxZNKESPcPydqJK4qWAo=",
+  "Hash": "VSFG49Blj2ZMUj9cN+z0a01mZFN0sGGrWKXfdpHAVLU=",
   "Source": "ProjetoBiblioteca",
   "BasePath": "_content/ProjetoBiblioteca",
   "Mode": "Default",
@@ -59,6 +59,48 @@
       "OriginalItemSpec": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProjetoBiblioteca.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\0d77ac23-10bc-42a1-b282-1a20b5dc546f.jpg",
+      "SourceId": "ProjetoBiblioteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\",
+      "BasePath": "_content/ProjetoBiblioteca",
+      "RelativePath": "capas/0d77ac23-10bc-42a1-b282-1a20b5dc546f#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rcwg4m3xt9",
+      "Integrity": "yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\capas\\0d77ac23-10bc-42a1-b282-1a20b5dc546f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\1bd81477-f092-4e38-a0cb-c1d271513b47.jpg",
+      "SourceId": "ProjetoBiblioteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\",
+      "BasePath": "_content/ProjetoBiblioteca",
+      "RelativePath": "capas/1bd81477-f092-4e38-a0cb-c1d271513b47#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rcwg4m3xt9",
+      "Integrity": "yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\capas\\1bd81477-f092-4e38-a0cb-c1d271513b47.jpg"
+    },
+    {
       "Identity": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg",
       "SourceId": "ProjetoBiblioteca",
       "SourceType": "Discovered",
@@ -78,6 +120,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\capas\\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\cde97e07-9dfa-4a61-85a2-eddf5fd8dc20.jpg",
+      "SourceId": "ProjetoBiblioteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\",
+      "BasePath": "_content/ProjetoBiblioteca",
+      "RelativePath": "capas/cde97e07-9dfa-4a61-85a2-eddf5fd8dc20#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rcwg4m3xt9",
+      "Integrity": "yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\capas\\cde97e07-9dfa-4a61-85a2-eddf5fd8dc20.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\e2b307e3-c569-4922-8812-def749e9c966.jpg",
+      "SourceId": "ProjetoBiblioteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\",
+      "BasePath": "_content/ProjetoBiblioteca",
+      "RelativePath": "capas/e2b307e3-c569-4922-8812-def749e9c966#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rcwg4m3xt9",
+      "Integrity": "yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\capas\\e2b307e3-c569-4922-8812-def749e9c966.jpg"
     },
     {
       "Identity": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png",
@@ -1405,6 +1489,170 @@
   ],
   "Endpoints": [
     {
+      "Route": "capas/0d77ac23-10bc-42a1-b282-1a20b5dc546f.jpg",
+      "AssetFile": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\0d77ac23-10bc-42a1-b282-1a20b5dc546f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Oct 2025 18:23:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc="
+        }
+      ]
+    },
+    {
+      "Route": "capas/0d77ac23-10bc-42a1-b282-1a20b5dc546f.rcwg4m3xt9.jpg",
+      "AssetFile": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\0d77ac23-10bc-42a1-b282-1a20b5dc546f.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Oct 2025 18:23:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rcwg4m3xt9"
+        },
+        {
+          "Name": "label",
+          "Value": "capas/0d77ac23-10bc-42a1-b282-1a20b5dc546f.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc="
+        }
+      ]
+    },
+    {
+      "Route": "capas/1bd81477-f092-4e38-a0cb-c1d271513b47.jpg",
+      "AssetFile": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\1bd81477-f092-4e38-a0cb-c1d271513b47.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Oct 2025 18:33:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc="
+        }
+      ]
+    },
+    {
+      "Route": "capas/1bd81477-f092-4e38-a0cb-c1d271513b47.rcwg4m3xt9.jpg",
+      "AssetFile": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\1bd81477-f092-4e38-a0cb-c1d271513b47.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Oct 2025 18:33:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rcwg4m3xt9"
+        },
+        {
+          "Name": "label",
+          "Value": "capas/1bd81477-f092-4e38-a0cb-c1d271513b47.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc="
+        }
+      ]
+    },
+    {
       "Route": "capas/1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg",
       "AssetFile": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg",
       "Selectors": [],
@@ -1479,6 +1727,170 @@
         {
           "Name": "label",
           "Value": "capas/1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc="
+        }
+      ]
+    },
+    {
+      "Route": "capas/cde97e07-9dfa-4a61-85a2-eddf5fd8dc20.jpg",
+      "AssetFile": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\cde97e07-9dfa-4a61-85a2-eddf5fd8dc20.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Oct 2025 18:30:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc="
+        }
+      ]
+    },
+    {
+      "Route": "capas/cde97e07-9dfa-4a61-85a2-eddf5fd8dc20.rcwg4m3xt9.jpg",
+      "AssetFile": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\cde97e07-9dfa-4a61-85a2-eddf5fd8dc20.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Oct 2025 18:30:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rcwg4m3xt9"
+        },
+        {
+          "Name": "label",
+          "Value": "capas/cde97e07-9dfa-4a61-85a2-eddf5fd8dc20.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc="
+        }
+      ]
+    },
+    {
+      "Route": "capas/e2b307e3-c569-4922-8812-def749e9c966.jpg",
+      "AssetFile": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\e2b307e3-c569-4922-8812-def749e9c966.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Oct 2025 18:13:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc="
+        }
+      ]
+    },
+    {
+      "Route": "capas/e2b307e3-c569-4922-8812-def749e9c966.rcwg4m3xt9.jpg",
+      "AssetFile": "C:\\Users\\3mod\\Desktop\\ProjetoBiblioteca\\ProjetoBiblioteca\\wwwroot\\capas\\e2b307e3-c569-4922-8812-def749e9c966.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "134010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Oct 2025 18:13:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rcwg4m3xt9"
+        },
+        {
+          "Name": "label",
+          "Value": "capas/e2b307e3-c569-4922-8812-def749e9c966.jpg"
         },
         {
           "Name": "integrity",

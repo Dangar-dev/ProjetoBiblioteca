@@ -1,5 +1,41 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\0d77ac23-10bc-42a1-b282-1a20b5dc546f.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoBiblioteca</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoBiblioteca</BasePath>
+      <RelativePath>capas/0d77ac23-10bc-42a1-b282-1a20b5dc546f.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rcwg4m3xt9</Fingerprint>
+      <Integrity>yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\0d77ac23-10bc-42a1-b282-1a20b5dc546f.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\1bd81477-f092-4e38-a0cb-c1d271513b47.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoBiblioteca</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoBiblioteca</BasePath>
+      <RelativePath>capas/1bd81477-f092-4e38-a0cb-c1d271513b47.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rcwg4m3xt9</Fingerprint>
+      <Integrity>yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\1bd81477-f092-4e38-a0cb-c1d271513b47.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>ProjetoBiblioteca</SourceId>
@@ -17,6 +53,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\1da56f4b-9d91-4af0-9f68-9f62b15e3f98.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\cde97e07-9dfa-4a61-85a2-eddf5fd8dc20.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoBiblioteca</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoBiblioteca</BasePath>
+      <RelativePath>capas/cde97e07-9dfa-4a61-85a2-eddf5fd8dc20.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rcwg4m3xt9</Fingerprint>
+      <Integrity>yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\cde97e07-9dfa-4a61-85a2-eddf5fd8dc20.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\e2b307e3-c569-4922-8812-def749e9c966.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ProjetoBiblioteca</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ProjetoBiblioteca</BasePath>
+      <RelativePath>capas/e2b307e3-c569-4922-8812-def749e9c966.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>rcwg4m3xt9</Fingerprint>
+      <Integrity>yxNxI8wuMzUCgg7pAkBj5fFTdpMiHZWxbYqL6d53mcc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\e2b307e3-c569-4922-8812-def749e9c966.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\capas\e76dc4c3-47bf-4b4e-8688-3d11f51ccce3.png'))">
       <SourceType>Package</SourceType>

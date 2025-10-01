@@ -9,7 +9,7 @@
 
 <!-- Formulário de busca -->
 <form method="get" asp-action="Vitrine" style="margin-bottom:10px">
-    <input list="livros" name="q" value="@ViewBag.q" placeholder="Buscar por título..." style="width:300px" />
+    <input list="livros" name="q" value="@ViewBag.q" placeholder="Buscar por título..." style="width:300px" />   <!--quando o usuario digitar na barra de pesquisa e sair dela ele ira buscar automaticamente  onchange="this.form.submit()" -->
     <datalist id="livros">
         @if (ViewBag.Titulos is IEnumerable<string> ts)
         {
@@ -34,9 +34,9 @@
     {
         <div style="border:1px solid #eee;border-radius:8px;padding:10px">
             <div style="height:220px;display:flex;align-items:center;justify-content:center;background:#fafafa;border-radius:6px;overflow:hidden">
-                @if (!string.IsNullOrWhiteSpace(l.CapaArquivo))
+                @if (!string.IsNullOrWhiteSpace(l.Capa))
                 {
-                    <img src="~/@l.CapaArquivo" alt="@l.Titulo" style="max-height:100%;max-width:100%" />
+                    <img src="~/@l.Capa" alt="@l.Titulo" style="max-height:100%;max-width:100%" />
                 }
                 else
                 {

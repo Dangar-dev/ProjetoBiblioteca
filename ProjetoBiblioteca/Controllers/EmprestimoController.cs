@@ -27,23 +27,24 @@ namespace ProjetoBiblioteca.Controllers
                     {
                         Id = rd.GetInt32("id"),
                         Titulo = rd.GetString("titulo"),
-                        CapaArquivo = rd["capa_arquivo"] as string
+                        Capa = rd["capa_arquivo"] as string
                     });
                         
                 }
-                using (var cmdAll = new MySqlCommand("sp_vitrine_buscar", conn) { CommandType = CommandType.StoredProcedure})
-                {
-                    cmdAll.Parameters.AddWithValue("p_q", "");
-                    using var rd2 = cmdAll.ExecuteReader();
-                    while (rd2.Read())
-                    {
-                        var titulo = rd2.GetString("titulo");
-                        if(!string.IsNullOrWhiteSpace(titulo) && !titulos.Contains(titulo))
-                            titulos.Add(titulo);
-                    }
-                }
-                    return View(itens);
+
             }
+            using (var cmdAll = new MySqlCommand("sp_vitrine_buscar", conn) { CommandType = CommandType.StoredProcedure })
+            {
+                cmdAll.Parameters.AddWithValue("p_q", "");
+                using var rd2 = cmdAll.ExecuteReader();
+                while (rd2.Read())
+                {
+                    var titulo = rd2.GetString("titulo");
+                    if (!string.IsNullOrWhiteSpace(titulo) && !titulos.Contains(titulo))
+                        titulos.Add(titulo);
+                }
+            }
+            return View(itens);
         }
     }
 }
