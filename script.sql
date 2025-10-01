@@ -373,6 +373,43 @@ alter table emprestimo_itens
 add constraint fk_itens_emp foreign key (id_emprestimo) references emprestimos(id),
 add constraint fk_itens_livro foreign key (id_livro) references livros(id);
 
+
+-- Leitor métodos
+delimiter $$
+create procedure sp_leitor_listar()
+begin
+  select id_leitor, nomeleitor, foto_leitor from leitor  order by nomeleitor ;
+end  ;
+$$
+
+create procedure sp_leitor_criar(p_nome varchar(30), p_foto varchar(255))
+begin
+   insert into leitor(nomeleitor,foto_leitor,criado_em)
+   values (p_nome,p_foto, now());
+end  ;
+$$
+create procedure sp_leitor_obter(p_id int)
+begin
+select id_leitor, nomeleitor, foto_leitor from Leitor
+where id_leitor = p_id ;
+end  ;
+$$
+create procedure sp_leitor_excluir (p_id int)
+begin
+	delete from leitor where id = p_id ;
+end ;
+$$
+
+create procedure sp_leitor_editar(p_id int,p_nome varchar(30), p_foto varchar(255))
+begin
+ update leitor set nomeLeitor = p_nome, foto_leitor = p_foto where id_leitor = p_id ;
+end ;
+
+$$
+
+delimiter ;
+
+
 use bdbiblioteca;
 
 select * from livros;    
