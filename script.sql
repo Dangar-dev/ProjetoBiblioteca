@@ -182,7 +182,7 @@ insert into leitor
 end $$
 delimiter ;
 
-
+call sp_leitor_criar("Henrique","dsada");
 
 
 
@@ -375,13 +375,8 @@ add constraint fk_itens_livro foreign key (id_livro) references livros(id);
 
 
 -- Leitor métodos
-delimiter $$
-create procedure sp_leitor_listar()
-begin
-  select id_leitor, nomeleitor, foto_leitor from leitor  order by nomeleitor ;
-end  ;
-$$
 
+delimiter $$
 create procedure sp_leitor_criar(p_nome varchar(30), p_foto varchar(255))
 begin
    insert into leitor(nomeleitor,foto_leitor,criado_em)
@@ -411,16 +406,68 @@ delimiter ;
 
 
 delimiter $$
-create procedure sp_vitrine_buscar(in p_q varchar(200))
+create  procedure sp_vitrine_buscar(in p_q varchar(200))
 begin
 select
 l.id,l.titulo, l.autor, l.editora, l.genero, l.ano, l.isbn,
 l.capa_arquivo, l.quantidade_total, l.quantidade_disponivel
 from livros l where l.quantidade_disponivel > 0 and (p_q is null or p_q = '' or
-l.titulo like concat ('%', p_q, '%'))
+l.titulo like concat('%', p_q, '%'))
+order by l.titulo ;
+end $$
+delimiter ;
+
+delimiter $$ 
+create procedure sp_livro_listar_por_ids (in p_ids text)
+begin
+/* p_ids : string CSV, ex.: '1,5,9'*/
+
+select l.id, l.titulo, l.capa_arquivo, l.quantidade_disponivel from
+livros l where find_in_set(l.id, p_ids) > 0
 order by l.titulo ;
 end $$
 
+delimiter $$
+create  procedure sp_leitor_listar()
+begin
+  select id_leitor, nomeleitor from leitor  order by nomeleitor ;
+end  ;
+$$
+create  procedure sp_emprestimo_criar(
+in p_id_leitor int,
+in p_id_bibliotecario int,
+in p_data_prevista date,
+out p_id_gerado int)
+begin
+insert into emprestimos(id_leitor, id_bibliotecario, data_prevista_devolucao)
+values (p_id_leitor,p_id_bibliotecario, p_data_prevista);
+set p_id_gerado = Last_insert_Id();
+end $$
+
+
+create procedure sp_emprestimo_adicionar_item(
+in p_id_emprestimo int,
+in p_id_livro int,
+p_qtd int
+)
+begin
+declare v_disp int ;
+if p_qtd is null or p_qtd <= 0 then
+	signal sqlstate '45000' set message_text = 'Livro inexistente';
+end if;
+ select quantidade_disponivel into v_disp from livros where id = p_id_livro for update;
+ if v_disp is null then
+	signal sqlstate '45000' set message_text='Livro inexistente.';
+ end if;
+ if v_disp < p_qtd then
+	signal sqlstate '45000' set message_text='Estoque insuficiente para este livro.';
+	end if;
+    
+    insert into emprestimo_itens(id_emprestimo,id_livro,quantidade)
+    values (p_id_emprestimo,p_id_livro,p_qtd);
+    
+    update livros set quantidade_disponivel = quantidade_disponivel - p_qtd where id = p_id_livro;
+end $$
 
 delimiter ;
 
